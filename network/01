@@ -1,0 +1,4 @@
+ifconfig -l
+
+# -l flag gives list of the names of all network interfaces available
+# ifconfig is for interface configuraton

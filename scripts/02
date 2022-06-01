@@ -1,0 +1,12 @@
+#!/bin/bash
+echo ""
+users
+echo ""
+echo "Which ACTIVE user you would like to delete?"
+read user
+sudo pkill -9 -u $user
+sudo userdel -f $user
+echo "active users:"
+users
+echo "real users:"
+awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd

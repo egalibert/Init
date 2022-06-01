@@ -1,0 +1,4 @@
+# You go to a file called hostname in /etc folder. 
+# Delete the existing hostname and replace it with vim with new name.
+# command 'cat /etc/hostname' shows the file."
+answer is: /etc/hostname

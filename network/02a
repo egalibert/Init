@@ -1,0 +1,3 @@
+ifconfig -L en0 | grep "inet " | cut -b 46-58
+
+# broadcast adress is an IP address which targets all system on a spesific subnet network instead of single hosts.

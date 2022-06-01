@@ -1,0 +1,5 @@
+You will find it in: ~/.ssh/authorized_keys
+
+# You can find the keys in home/elliot/.ssh and using 'cat id_rsa.pub' or 'cat id_rsa'
+# if there are no keys you can create them using 'ssh-keygen -t rsa'
+# RSA is an algorithm that works on two different keys, public and private keys

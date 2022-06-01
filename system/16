@@ -1,0 +1,5 @@
+<cron> is the solution for this question and 
+crontab is the file where you can find the all scheduled tasks
+
+# cron is a system service that runs tasks called cron jobs in the backround
+# You can use '(sudo) crontab -l -cmd' to list the scheduled tasks

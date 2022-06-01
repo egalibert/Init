@@ -1,0 +1,5 @@
+df -H 
+
+# df -h also works and says in humanly readablr way but is in power of 1024 and -H
+# is in power of 1000 so its more clear
+# df shows free and used disk spaces

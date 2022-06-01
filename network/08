@@ -1,0 +1,3 @@
+I used nslookup who.int to find IP, then whois (on that IP).
+There I found the answer and modified it to find only correct part
+whois 104.17.113.188 | grep "OrgName"

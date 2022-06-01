@@ -1,0 +1,3 @@
+lsblk
+or 
+sudo fdisk -l 

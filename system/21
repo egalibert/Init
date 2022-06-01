@@ -1,0 +1,4 @@
+cat /etc/passwd | awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' 
+
+#I used 'cat /etc/login.defs | grep "UID"' to find out min and max UID. Real users UID is 1000 or more.
+# also remove nobody because its not a real user with $1 != "nobody"

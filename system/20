@@ -1,0 +1,4 @@
+compgen -u
+
+# also this way works 'cat /etc/passwd | cut -d ":" -f 1'
+# 'cat /etc/passwd' shows a lot of extra

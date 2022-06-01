@@ -1,0 +1,6 @@
+systemctl list-unit-files --type=service
+
+# systemctl list-unit-files --type=service --state=enabled
+# systemctl list-unit-files --type=service --state=enabled --all
+# last two are the same and make it prettier with only enabled users shown 
+# They are called "daemons" which are programs that run in the backround

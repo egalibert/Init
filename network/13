@@ -1,0 +1,7 @@
+I used 'nslookup 10.11.5.6'
+to find answer
+c1r5p6.hive.fi.
+
+# from the previous question you will find the yiaddr after nslookup so the computer location changes
+# ipconfig getpacket en0 | grep yiaddr | cut -b 10-19
+# 10.11.5.6

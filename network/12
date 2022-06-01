@@ -1,0 +1,4 @@
+ipconfig getpacket en0 | grep yiaddr | cut -b 10-19
+
+# a dhcp server is a network server that automatically assigns IP adrresses to client device
+# at home network your wi-fi router is a dhcp server.

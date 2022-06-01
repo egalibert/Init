@@ -1,0 +1,202 @@
+#!bin/bash
+
+score=0
+
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+WHITE='\033[1;37m'
+CYAN='\033[1;36m'
+BLACK='\033[1;30m'
+PURP='\033[1;35m'
+YELLOW='\033[1;33m'
+NORMAL='\033[0m'
+BLOCKG='\033[1;42m'
+BLOCKR='\033[1;41m'
+BLOCKY='\033[1;43m'
+QUES='\033[1;45m'
+
+prize="         :::      ::::::::
+       :+:      :+:    :+:
+     +:+ +:+         +:+   
+   +#+  +:+       +#+     
+ +#+#+#+#+#+   +#+        
+      #+#    #+#          
+     ###   ########.fr   "
+
+echo "${YELLOW} ||||||  ||  || || ||||||
+ ||  ||  ||  || ||   |||
+ ||  ||  ||  || ||  |||
+ ||||||| |||||| || ||||||
+ "
+	   
+
+echo "${PURP}Welcome to the Quiz! \n"
+sleep 2
+echo "${PURP}If you manage to get${GREEN} 5 out of 5 questions${PURP} You will recieve a special prize!!"
+sleep 2
+echo "${PURP}\nWhat is your ${WHITE}name?\n"
+read name
+sleep 1
+echo "\n${PURP}Well good luck with this quiz ${WHITE}$name!\n"
+sleep 2
+echo "${CYAN}The first question is\n\n"
+sleep 3
+echo "${CYAN}What number am I thinking of between 1 and 1000?\n"
+read n
+sleep 3
+if [ $n -eq 517 ];
+then
+echo "${GREEN}Are you a mind reader? \n"
+exit
+else
+echo "${RED}\nWrong you lost...\n\n\n"
+sleep 4
+echo "${GREEN}Just kidding, time for the real quiz!\n\n"
+fi
+sleep 1
+echo "${RED}Please answer only using A, B, C or D\n\n"
+sleep 2
+while true; do
+echo "${CYAN}Question #1\n"
+sleep 2
+echo "${CYAN}What is the capital city of Canada\n"
+echo "${CYAN}A. Montreal B. Toronto C. Ottawa D. Quebec\n\n"
+read letter
+sleep 3
+case $letter in
+C|c )
+echo "${GREEN}\nThat's correct!\n"
+score=$((score + 1))
+break;;
+A|a|B|b|D|d )
+echo "${RED}\nThat's wrong..\n"
+break;;
+* )
+clear
+echo "${RED}please answer A, B, C or D\n";;
+esac
+done
+sleep 2
+echo "${PURP}So far your score is $score\n"
+sleep 2
+while true; do
+echo "${CYAN}Question #2\n"
+sleep 2
+echo "${CYAN}Elliot is half Finnish and..?\n"
+echo "${CYAN}A. Swedish B. Estonian C. Spanish D. French\n\n"
+read letter
+sleep 3
+case $letter in
+D|d )
+echo "${GREEN}\nThat's correct!\n"
+score=$((score + 1))
+break;;
+A|a|B|b|C|c )
+echo "${RED}\nThat's wrong..\n"
+score=$((score + 0))
+break;;
+* )
+clear
+echo "${RED}please answer A, B, C or D\n";;
+esac
+done
+sleep 2
+echo "${PURP}So far your score is $score\n"
+sleep 2
+while true; do
+echo "${CYAN}Question #3\n"
+sleep 2
+echo "${CYAN}Who is the greatest footballer of all time? \n"
+echo "${GREEN}A. C.Ronaldo  ${RED}B. Messi ${CYAN}C. Pelé D. Maradona\n"
+read letter
+sleep 3
+case $letter in
+A|a )
+echo "${GREEN}\nThat's correct!\n"
+score=$((score + 1))
+break;;
+d|D|B|b|C|c )
+echo "${RED}\nThat's wrong..\n"
+score=$((score + 0))
+break;;
+* )
+echo "\n\n${RED}please answer A, B, C or D\n";;
+esac
+done
+sleep 2
+echo "${PURP}So far your score is $score\n"
+sleep 2
+while true; do
+echo "${CYAN}Question #4\n"
+sleep 2
+echo "${CYAN}What is the heaviest land animal in the world? \n"
+echo "${CYAN}A. Hippopotamus  B. Rhinocerus C. Blue whale D. Elephant\n"
+read letter
+sleep 3
+case $letter in
+D|d )
+echo "${GREEN}\nThat's correct!\n"
+score=$((score + 1))
+break;;
+a|A|B|b|C|c )
+echo "${RED}\nThat's wrong..\n"
+score=$((score + 0))
+break;;
+* )
+echo "\n\n${RED}please answer A, B, C or D";;
+esac
+done
+sleep 2
+echo "${PURP}So far your score is $score\n"
+sleep 2
+while true; do
+echo "${CYAN}Question #5\n"
+sleep 2
+echo "${CYAN}How many points will give Elliot for this script \n"
+echo "${CYAN}A. 5  B. 0 C. 3 D. 4\n"
+read letter
+sleep 3
+case $letter in
+A|a )
+echo "${GREEN}\nThat's correct!\n"
+score=$((score + 1))
+break;;
+d|D|B|b|C|c )
+echo "${RED}\nThat's wrong..\n"
+score=$((score + 0))
+break;;
+* )
+echo "\n\nplease answer A, B, C or D\n";;
+esac
+done
+echo "${PURP}The quiz done, now lets see your score..\n"
+sleep 4
+echo "${PURP}Your final score is: $score\n\n"
+if [ "$score" = 5 ]
+then
+echo "${YELLOW}Congratulations, you did it!!!"
+	mkdir 5.SPECIAL_PRIZE
+	mkdir 4.The
+	mkdir 3.Won
+	mkdir 2.Have
+	mkdir 1.You
+	echo "$prize" > 5.SPECIAL_PRIZE/prize.txt
+	sleep 6
+	rmdir 1.You
+	rmdir 2.Have
+	rmdir 3.Won
+	rmdir 4.The
+else 
+echo "${RED}Well better luck next time!\n"
+fi
+sleep 5
+echo "${RED}Do you wish to play again or exit?\n"
+sleep 2
+echo "${RED}Press 1 to play again or anything else to exit\n"
+read n
+if [ "$n" = 1 ]
+then
+sh 03
+else
+exit
+fi

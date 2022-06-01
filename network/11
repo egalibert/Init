@@ -1,0 +1,6 @@
+#The first line is the default gateway and the second one is the nat
+#and that connects me to to outisde world, nat means:
+#Network Address Translation (NAT) and is designed for IP address conservation. 
+#It enables private IP networks that use unregistered IP addresses to connect to the Internet.
+#if you use traceroute who.int | grep 'nat' you will able to find the answer line
+Answer = nat (10.60.1.1)

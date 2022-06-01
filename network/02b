@@ -1,0 +1,4 @@
+arp -a | cut -d "(" -f 2 | cut -d ")" -f 1
+
+# arp(Address Resolution Protocol) displays all IP addresses connected to local network.
+# -a prompts the devoce to list all IP addresses found within ARP cache for associated network.

@@ -1,0 +1,6 @@
+Needed to add 46.19.122.85   intra.42.fr into file in /etc/hosts"
+
+# so vim /etc/hosts 
+# add: 46.19.122.85   intra.42.fr
+# then ESC, :wq
+# this cant be done in school computers

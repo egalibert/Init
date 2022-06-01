@@ -1,0 +1,3 @@
+sudo systemctl status ssh
+
+# systemctl controls the systemd and system service manager.

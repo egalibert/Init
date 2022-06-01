@@ -1,0 +1,7 @@
+sudo pkill -9 <process_name>
+
+# pkill only stops it 
+# You can also use 'sudo pkill -9 PID' if you know the PID, this is to target specific
+# Also I have had some weird behaviour and sometimes it just stops or teminates it
+# This answer seemed to always kill it
+# kill -9 `jobs -l | grep 'tail -f ' | awk '{print $2}'`

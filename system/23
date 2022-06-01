@@ -1,0 +1,15 @@
+# Graphic session: After launching VM and you see the login manager
+#	Just enter username and password
+
+# SSH Session:
+#   In VM settings->network change NAT to bridge adapter and start the system
+#       since, NAT machine doesnot have IP address on the external networks so,
+#       bridge networking connects the VM to a network using the network adapter on the host system.
+#   first, install openssh-server using sudo apt-get install openssh-server 
+#   then, start the service using sudo service ssh start
+#   then, get the IP address of the Debian system in VM using hostname -I i.e, 10.11.199.31
+#   To connect via ssh on the VM use the following commands in Terminal, ssh user@IPaddress
+#		for example ssh egaliber@10.0.2.15 and then password
+
+# I also needed to change from VirtualBox settings-> Network the port configuration
+# to 2222 and 22

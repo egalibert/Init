@@ -1,0 +1,3 @@
+sudo adduser <username>
+
+# 'sudo userdel <username>' deletes user

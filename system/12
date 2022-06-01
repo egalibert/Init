@@ -1,0 +1,5 @@
+sudo du -sh /var/*
+
+# -h is humanly readable and -sh displays it more clearly
+# du shows how much disk space is used 
+# -s displays total size of the specified directory

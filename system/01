@@ -1,0 +1,4 @@
+# The version can be found in a file named: "debian_version".
+# Its found inside the directory /etc.
+# full way /etc/debian_version
+The version is 11.3

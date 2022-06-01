@@ -1,0 +1,2 @@
+apt list --installed
+# apt list --installed | cut -d "/" -f 1
